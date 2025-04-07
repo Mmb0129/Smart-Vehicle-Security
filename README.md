@@ -122,27 +122,9 @@ This system integrates:
 
 ---
 
-## System Architecture & Flow Diagrams
-*(Include flowcharts, circuit diagrams, and GUI screenshots if available here)*  
-*(Use Markdown image syntax to embed images)*  
-Example:  
-```markdown
-![System Architecture](images/system_architecture.png)
-
-
-Cost Advantage
-Feature	Existing Commercial Telematics	Proposed System
-Price	₹30,000/year (subscription) or high-end cars (₹1L+)	₹15,000–₹20,000 one-time
-Alcohol Detection	❌	✅
-Facial Recognition	❌	✅
-Custom Alerts (Email/SMS)	❌	✅
-
-
 Future Scope
 
 Integrate real-time cloud dashboard for owners.
-
-Improve facial recognition with deep learning models.
 
 Add video-based driver drowsiness detection.
 

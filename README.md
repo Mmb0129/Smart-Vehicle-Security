@@ -1,87 +1,145 @@
-# Smart-Vehicle-Security
+#  Smart Vehicle Security and Safety System: Integration of Theft Detection and Accident Control
+
+
+
+# Demo : 
 https://drive.google.com/drive/folders/1kY5IYFDf-bgPrGKP49D3qB0dDGZFniiI?usp=sharing
 
-🚗 Smart Vehicle Security and Safety System
-Project Type: Internally Funded Student Project (IFSP-2023)
-Institution: SSN College of Engineering
-Budget: ₹16,000
-Duration: 12 Months
-Department Involved: Computer Science & Engineering
 
-📌 Abstract
-The Smart Vehicle Security and Safety System addresses two pressing challenges in the automotive domain: vehicle theft prevention and accident detection & rescue. Leveraging Raspberry Pi, facial recognition, alcohol sensing, GPS, GSM, and accelerometer-based IoT technologies, the system provides real-time theft alerts, remote ignition control, and immediate accident notifications — ensuring safety for both vehicle and driver.
+## Institution
+**SSN College of Engineering, Kalavakkam – 603110**  
+**INTERNALLY FUNDED STUDENT PROJECT (IFSP-2023)**  
+**Project Duration:** 12 months  
+**Budget:** ₹16,000  
 
-🎯 Objectives
-🔐 Detect unauthorized vehicle access attempts.
+## 👥 Team Members
+- **Micheal Berdinanth M** – II Year, Department of Computer Science and Engineering  
+- **Nandhalal S** – II Year, Department of Computer Science and Engineering  
+- **Prashanna Kumar S** – II Year, Department of Computer Science and Engineering  
+- **Pranav CM** – II Year, Department of Electrical and Electronics Engineering  
 
-📸 Use facial recognition to authenticate the driver.
+**Project Guide:** Dr. Lakshmi Priya S, Assistant Professor, Department of CSE
 
-🍷 Prevent drunk driving via alcohol sensors.
+---
 
-📉 Detect accidents using an accelerometer sensor.
+## 📚 Broad Subject
+Automotive Security and Accident Detection
 
-📍 Send real-time location alerts to guardians/rescue services.
+## ❓ Problem Statement
+Vehicle theft and delayed accident response are major global issues. Traditional systems like alarms and steering locks fail against modern theft techniques. Simultaneously, the lack of rapid accident detection mechanisms delays rescue, increasing injury severity or fatalities. A unified solution combining both theft prevention and accident control is needed.
 
-💬 Enable live vehicle tracking and SMS/email notifications.
+---
 
-🔧 Tech Stack and Hardware Components
-Category	Tools/Modules Used
-Microcontroller	Raspberry Pi
-Communication	GSM Module, GPS Module
-Sensors	Alcohol Sensor (MQ-3/MQ-135), Accelerometer
-Image Processing	Facial Recognition using OpenCV (Python)
-Communication	SMS/Email Notifications
-Software	Python, SMTP, Twilio API (optional), Flask
-🔍 Features & Innovations
-Feature	Available in Proposed System
-GSM Module for communication	✅
-Remote engine lock via SMS	✅
-GPS-based real-time vehicle tracking	✅ (accuracy within 10m)
-Alcohol detection before ignition	✅
-Facial recognition for owner verification	✅
-Accelerometer-based accident detection	✅
-Email + SMS notifications	✅
-Cost-effective compared to commercial models	✅
-🧠 System Workflow
-1. Vehicle Theft Detection
-Intrusion detected → SMS sent to owner.
+## 🧠 Project Summary
+This system integrates:
+- **Vehicle Theft Detection**: Sends SMS and email alerts upon unauthorized access. Enables remote engine locking.
+- **Facial Recognition**: Verifies the driver’s identity before ignition.
+- **Alcohol Detection**: Prevents vehicle ignition if alcohol is detected in the driver’s breath.
+- **Accident Detection**: Uses an accelerometer and GPS to detect crashes and alert guardians/emergency services with real-time location.
 
-Owner replies with command → Engine locked remotely.
+---
 
-Email notification also triggered.
+## 🔑 Keywords
+`Vehicle theft detection` `Automatic accident detection` `Rescue system` `Facial recognition` `Alcohol sensor` `IoT` `SMS alerts` `Raspberry Pi`
 
-2. Alcohol & Face Recognition Check
-Driver's face is scanned.
+---
 
-Alcohol level is detected via MQ sensor.
+## 🎯 Objectives
+- Develop a remote theft detection and engine locking system
+- Integrate facial recognition using Raspberry Pi
+- Add alcohol detection sensor-based ignition lock
+- Enable automatic accident detection using accelerometers
+- Send emergency alerts and accident location via SMS and email
+- Provide cost-effective telematic services
 
-If valid face & no alcohol detected → ignition allowed.
+---
 
-3. Accident Detection & Emergency Alert
-Accelerometer detects unusual shock/tilt.
+## 🛠️ Problem Definition
 
-GPS location is fetched and sent to emergency contacts.
+###  Vehicle Theft
+- Financial loss and increased crime
+- Traditional systems are ineffective
+- Need for smarter theft deterrence
 
-Email/SMS alerts sent instantly.
+###  Alcohol Impairment
+- Major cause of road accidents
+- Legal and safety implications
+- Must prevent drunk driving
 
-📸 Screenshots and Architecture
-🧱 System Architecture Diagram
+###  Delayed Accident Response
+- Golden Hour importance
+- Difficulty in locating accident sites
+- Need for automated, location-based alerts
 
-🔁 Process Flow Diagram
+---
 
-📷 Alcohol detection and face recognition UI
 
-📩 Sample SMS/email alert screenshots
+## 🆕 Proposed System and Innovations
 
-📍 Location tracking demo (Google Maps integration)
+| Feature | GPS-GSM Tracking | Arduino-based Tracker | Accident Detection Tracker | **Proposed System** |
+|--------|------------------|------------------------|-----------------------------|----------------------|
+| GSM Module | ✅ | ✅ | ✅ | ✅ |
+| SMS Notification | ✅ | ❌ | ✅ | ✅ |
+| GPS Accuracy (≤10m) | ✅ | ✅ | ✅ | ✅ |
+| Remote Engine Lock | ❌ | ❌ | ✅ | ✅ |
+| Alcohol Sensor | ❌ | ❌ | ❌ | ✅ |
+| Facial Recognition | ❌ | ❌ | ❌ | ✅ |
+| Accident Detection | ❌ | ❌ | ✅ | ✅ |
+| Real-time Location | ✅ | ✅ | ✅ | ✅ |
 
-📊 Cost Advantage
+---
+
+## Telematic Devices: Current vs Proposed
+
+| Feature | Existing | Proposed |
+|--------|----------|----------|
+| Annual Cost | ₹30,000 | ₹15,000–₹20,000 |
+| GPS Tracking | ✅ | ✅ |
+| Remote Engine Control | ✅ | ✅ |
+| Driving Behavior Analysis | ✅ | ✅ |
+| Accessibility | Only high-end vehicles | Affordable for all |
+
+---
+
+## 🚀 Modules Description
+
+### 1. Vehicle Theft Detection
+- Raspberry Pi detects intrusion
+- Sends SMS/email via GSM
+- Owner can send SMS to remotely lock engine
+- Live location sent via GPS every 10 mins
+
+### 2. Facial Recognition & Alcohol Detection
+- Camera + Facial Recognition algorithm (Raspberry Pi)
+- Alcohol Sensor + MQ-135 sensor
+- Prevents ignition if unknown face or alcohol detected
+- Sends alerts to owner if violated
+
+### 3. Accident Detection & Rescue
+- Accelerometer detects impact severity
+- Sends emergency alert + GPS location via SMS/email
+- Alerts both guardian and rescue team
+
+---
+
+## System Architecture & Flow Diagrams
+*(Include flowcharts, circuit diagrams, and GUI screenshots if available here)*  
+*(Use Markdown image syntax to embed images)*  
+Example:  
+```markdown
+![System Architecture](images/system_architecture.png)
+
+
+Cost Advantage
 Feature	Existing Commercial Telematics	Proposed System
 Price	₹30,000/year (subscription) or high-end cars (₹1L+)	₹15,000–₹20,000 one-time
 Alcohol Detection	❌	✅
 Facial Recognition	❌	✅
 Custom Alerts (Email/SMS)	❌	✅
-🚀 Future Scope
+
+
+Future Scope
+
 Integrate real-time cloud dashboard for owners.
 
 Improve facial recognition with deep learning models.
@@ -90,13 +148,3 @@ Add video-based driver drowsiness detection.
 
 Mobile app for real-time notifications and control.
 
-👥 Team
-Nandhalal S – CSE, II Year
-
-Prashanna Kumar S – CSE, II Year
-
-Micheal Berdinanth M – CSE, II Year
-
-Pranav CM – EEE, II Year
-
-Mentor: Ms. Lakshmi Priya S, Assistant Professor, CSE
